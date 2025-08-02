@@ -24,7 +24,7 @@ jobs:
           if [ -s requirements.txt ]; then
             pip install -r requirements.txt -t package/
           fi
-          cp lambda_function.py package/
+          cp src/lambda_function.py package/
           cd package
           zip -r ../lambda.zip .
 
